@@ -55,7 +55,37 @@ Fedora
    $ pwd
    ```
 
-2. **ls:** The `ls` command lists files and directories within the file system, and shows detailed information about them.
+2. **cd:** The `cd` command in linux known as change directory command. It is used to change current working directory. 
+
+    ```bash
+   $ cd [directory]
+    ```
+
+    To change directory to the root directory:
+
+    ```bash
+   $ cd /
+    ```
+
+   To move inside a directory from a directory:
+
+    ```bash
+   $ cd dir_1/dir_2/dir_3
+    ```
+
+    To change directory to the home directory:
+
+    ```bash
+   $ cd ~
+    ```  
+    
+    To move to the parent directory of current directory:
+
+    ```bash
+   $ cd ..
+    ```  
+
+3. **ls:** The `ls` command lists files and directories within the file system, and shows detailed information about them.
 
     ```bash
      
@@ -86,7 +116,7 @@ Fedora
     -Q Quoted output
     ```
 
-3. **mkdir:** With `mkdir`(make directory) command you can create directories or folders.
+4. **mkdir:** With `mkdir`(make directory) command you can create directories or folders.
 
    ```bash
    $ mkdir newfolder
@@ -104,7 +134,7 @@ Fedora
    folder1 folder2 folder3
    ```
 
-4. **rmdir:** The `rmdir`(remove directories) is used to remove (empty) directories. 
+5. **rmdir:** The `rmdir`(remove directories) is used to remove (empty) directories. 
 
    Syntax
 
@@ -124,7 +154,7 @@ Fedora
    $ rmdir foldername1 foldername2 foldername3
    ```
 
-5. **touch**: The `touch` command is used to create, change and modify timestamps of a file. 
+6. **touch**: The `touch` command is used to create, change and modify timestamps of a file. 
 
    Create a new (empty) file:
 
@@ -137,7 +167,7 @@ Fedora
     $ touch file1_name file2_name file3_name
     ```
    
-6. **rm**: The `rm`(remove) command is used to remove objects such as files, directories, symbolic links etc from the file system.
+7. **rm**: The `rm`(remove) command is used to remove objects such as files, directories, symbolic links etc from the file system.
 
    Remove file: 
 
@@ -146,7 +176,7 @@ Fedora
    ```
       
 
-7. **cat**: The `cat` command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands. 
+8. **cat**: The `cat` command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands. 
      
     ```bash
     $ cat [OPTION] [FILE]
@@ -187,11 +217,11 @@ Fedora
     tac filename
     ```
 
-8. **cp**: The `cp` command is ued to copy a file to another location.
+9. **cp**: The `cp` command is ued to copy a file to another location.
 
-9. **mv**: The `mv` command is used to move a file another location
+10. **mv**: The `mv` command is used to move a file another location
 
-10. **echo**: The `echo` command prints message to screen
+11. **echo**: The `echo` command prints message to screen
 
 **[⬆ Back to Top](#table-of-contents)**
 
