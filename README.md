@@ -30,11 +30,17 @@
   
 4. **Popular Linux Distributions:** A Linux distribution  is created from a Linux kernel. To install Linux, we need to choose a distribution. There are around 600 Linux distributions, with more than 500 in active development. 
 Debian
+
 Ubuntu
+
 Mint
+
 Maniaro
+
 openSUSE
+
 RedHat
+
 Fedora
 
 
@@ -48,7 +54,7 @@ Fedora
    $ pwd
    ```
 
-2. **ls:**: The `ls` command lists files and directories within the file system, and shows detailed information about them.
+2. **ls:** The `ls` command lists files and directories within the file system, and shows detailed information about them.
 
     ```bash
      
@@ -57,7 +63,7 @@ Fedora
      Example:
      $ ls
      
-     //Listing files & directories with details
+     //Listing files and directories with details
      $ ls -l
      
      //Home directory
@@ -65,7 +71,7 @@ Fedora
      
     ```
 
-    The list of possible options for `ls` command,
+    The list of possible options for `ls` command:
 
     ```cmd
     -a Show all (including hidden)
@@ -83,6 +89,7 @@ Fedora
 
    ```bash
    $ mkdir newfolder
+
    $ ls
    newfolder
    ```
@@ -91,28 +98,29 @@ Fedora
 
    ```bash
    $ mkdir folder1 folder2 folder3
+
    $ ls
    folder1 folder2 folder3
    ```
 
-4. **rmdir:**: The `rmdir`(remove directories) is used to remove (empty) directories. 
+4. **rmdir:** The `rmdir`(remove directories) is used to remove (empty) directories. 
 
    Syntax
 
    ```bash
-   rmdir [option] directory
+   $ rmdir [option] directory
    ```
    
    Remove empty directory:
 
    ```bash
-   rmdir FolderName
+   $ rmdir foldername
    ```
 
    Remove multiple directories:
 
    ```bash
-   rmdir FolderName1 FolderName2 FolderName3
+   $ rmdir foldername1 foldername2 foldername3
    ```
 
 5. **touch**: The `touch` command is used to create, change and modify timestamps of a file. 
@@ -120,12 +128,12 @@ Fedora
    Create a new (empty) file:
 
        ```bash
-       touch file_name
+       $ touch file_name
        ```
    Create multiple files:
 
        ```bash
-       touch file1_name file2_name file3_name
+       $ touch file1_name file2_name file3_name
        ```
    
 6. **rm**: The `rm`(remove) command is used to remove objects such as files, directories, symbolic links etc from the file system.
