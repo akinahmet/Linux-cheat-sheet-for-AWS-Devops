@@ -29,6 +29,7 @@
 
   
 4. **Popular Linux Distributions:** A Linux distribution  is created from a Linux kernel. To install Linux, we need to choose a distribution. There are around 600 Linux distributions, with more than 500 in active development. 
+
 Debian
 
 Ubuntu
@@ -127,14 +128,14 @@ Fedora
 
    Create a new (empty) file:
 
-       ```bash
-       $ touch file_name
-       ```
+    ```bash
+    $ touch file_name
+    ```
    Create multiple files:
 
-       ```bash
-       $ touch file1_name file2_name file3_name
-       ```
+    ```bash
+    $ touch file1_name file2_name file3_name
+    ```
    
 6. **rm**: The `rm`(remove) command is used to remove objects such as files, directories, symbolic links etc from the file system.
 
@@ -143,53 +144,47 @@ Fedora
    ```bash
    rm file_name
    ```
-   
-   Remove directory: 
-
-   ```bash
-   rm -r myDir
-   ```
-   
+      
 
 7. **cat**: The `cat` command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands. 
      
-     ```bash
-     $ cat [OPTION] [FILE]...
-     ```
+    ```bash
+    $ cat [OPTION] [FILE]
+    ```
 
    To view a file:
    
-       ```bash
-       cat filename
-       ```
+    ```bash
+    cat filename
+    ```
 
     To view multiple files:
    
-       ```bash
-       cat filename1 filename2 filename3
-       ```
+    ```bash
+    cat filename1 filename2 filename3
+    ```
 
     Create a new file:
    
-       ```bash
-       cat> mynewfile
-       ```
+    ```bash
+    cat> mynewfile
+    ```
     
     Copy the contents of one file to another file: 
 
     ```bash
-       cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
+    cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
     ```
     To append the contents of one file to the end of another file:
 
     ```bash
-       cat file1 >> file2
+    cat file1 >> file2
     ```
 
     To display content in reverse order using tac command:
 
     ```bash
-       tac filename
+    tac filename
     ```
 
 8. **cp**: The `cp` command is ued to copy a file to another location.
@@ -203,14 +198,10 @@ Fedora
 ### File permissions
 
 
-1. **Ownership:**
+**1.Ownership:**
 
 
-2. **Permissions:**
-
-**Change access:**
-
-**[⬆ Back to Top](#table-of-contents)**
+**2.Permissions:**
 
 
 **[⬆ Back to Top](#table-of-contents)**
