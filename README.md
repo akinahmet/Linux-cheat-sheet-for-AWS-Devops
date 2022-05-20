@@ -19,7 +19,7 @@
 
                            |
 
-### 1.What is Linux?
+1. ### What is Linux?
 
 1. **Linux:** Linux is a family of open-source Unix-like operating systems based on the Linux kernel. We use the term “Linux” to refer to the Linux kernel.  
 
@@ -48,7 +48,7 @@ Fedora
 
    **[⬆ Back to Top](#table-of-contents)**
 
-### 2.Basic Linux Commands
+2. ### Basic Linux Commands
 
 1. **pwd:** The pwd(Present Working Directory)  command outputs the name of the current working directory. 
 
@@ -226,7 +226,7 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### 3.File permissions
+3. ### File permissions
 
 
 **1.Ownership:**
@@ -237,7 +237,7 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### 4.Search Files
+4. ### Search Files
 
 1. **Pattern search:**
 The `grep` command is used to search patterns in files.
@@ -275,7 +275,7 @@ find ./directory_name -empty
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### 5.Vi/Vim commands
+5. ### Vi/Vim commands
 
 Vi is a text editor originally created for the Unix operating system.
 Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers more
@@ -308,8 +308,6 @@ You can create a new file or open an existing file using `vi filename` command.
 
 ```
 
-
-
 Exiting
 
     These commands are used to exit from the file.
@@ -323,9 +321,9 @@ Exiting
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### 6.Linux for AWS DevOps
+6. ### Linux for AWS DevOps
 
-## 1.Linux Environment Variables
+**1.Linux Environment Variables**
 
 - Variables can be classified into two main categories, `environment variables`, and `shell variables`. 
 
@@ -401,7 +399,7 @@ To add a directory to path:
 ```
 
 
-### 7.Linux getting help
+7. ### Linux getting help
 
 1. The man pages
 2. The info pages
