@@ -12,9 +12,9 @@
 | 2   | [**Basic Linux Commands**](#basic-linux-commands)                       |
 | 3   | [**File permissions**](#file-permissions)                               |
 | 4   | [**Search Files**](#search-files)                                       |
-| 5   | [**Vi/Vim commands**](#vi/vim-commands)                                 |
-| 6   | [**Linux for AWS DevOps**](#linux-getting-help)                           |
-| 7   | [**Linux getting help**](#linux-for-aws-devops)
+| 5   | [**Vi Vim commands**](#vi-vim-commands)                                 |
+| 6   | [**Linux for AWS DevOps**](#linux-for-aws-devops)                           |
+| 7   | [**Linux getting help**](#linux-getting-help)
 
 
                            |
@@ -275,7 +275,7 @@ find ./directory_name -empty
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Vi/Vim commands
+5. ### Vi Vim commands
 
 Vi is a text editor originally created for the Unix operating system.
 Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers more
