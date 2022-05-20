@@ -13,12 +13,13 @@
 | 3   | [**File permissions**](#file-permissions)                               |
 | 4   | [**Search Files**](#search-files)                                       |
 | 5   | [**Vi/Vim commands**](#vi/vim-commands)                                 |
-| 5   | [**Linux getting help**](#linux-getting-help)
+| 6   | [**Linux for AWS DevOps**](#linux-getting-help)                           |
+| 7   | [**Linux getting help**](#linux-for-aws-devops)
 
 
                            |
 
-### What is Linux?
+### 1.What is Linux?
 
 1. **Linux:** Linux is a family of open-source Unix-like operating systems based on the Linux kernel. We use the term “Linux” to refer to the Linux kernel.  
 
@@ -47,7 +48,7 @@ Fedora
 
    **[⬆ Back to Top](#table-of-contents)**
 
-### Basic Linux Commands
+### 2.Basic Linux Commands
 
 1. **pwd:** The pwd(Present Working Directory)  command outputs the name of the current working directory. 
 
@@ -225,7 +226,7 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### File permissions
+### 3.File permissions
 
 
 **1.Ownership:**
@@ -236,7 +237,7 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Search Files
+### 4.Search Files
 
 1. **Pattern search:**
 The `grep` command is used to search patterns in files.
@@ -274,7 +275,7 @@ find ./directory_name -empty
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Vi/Vim commands
+### 5.Vi/Vim commands
 
 Vi is a text editor originally created for the Unix operating system.
 Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers more
@@ -322,8 +323,85 @@ Exiting
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### 6.Linux for AWS DevOps
 
-### Linux getting help
+## 1.Linux Environment Variables
+
+- Variables can be classified into two main categories, `environment variables`, and `shell variables`. 
+
+- `Shell variables` are valid in the current shell instance.
+
+- `Environment variables` are variables that are valid system-wide.
+
+**Shell variables**
+
+The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character (_) and beginning with a letter or underscore character.
+
+Create a shell variable:
+
+```bash
+    $ shellvar="shell variable"
+```
+To call a shell variable:
+
+```bash
+    $ echo $shellvar
+```
+
+To remove a shell variable:
+
+```bash
+    $ unset shellvar
+```
+
+**Environment Variables**
+
+Environment variables allow you to customize how the system works and the behavior of the applications on the system.
+
+Create an environment variable:
+
+```bash
+    $ export ENVVAR="environment variable"
+```
+To call a shell variable:
+
+```bash
+    $ echo $ENVVAR
+```
+or
+
+```bash
+    $ printenv ENVVAR
+```
+
+To remove an environment variable:
+
+```bash
+    $ unset ENVVAR
+```
+
+**Other Commands**
+
+To get a list of all shell variables, environmental variables and shell functions:
+
+```bash
+    $ set
+```
+
+To see path:
+
+```bash
+    $ printenv PATH
+```
+
+To add a directory to path:
+
+```bash
+    $ export PATH=$PATH:/home/ec2-user/test
+```
+
+
+### 7.Linux getting help
 
 1. The man pages
 2. The info pages
