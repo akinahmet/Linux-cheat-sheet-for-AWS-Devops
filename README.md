@@ -10,11 +10,12 @@
 | --- | ----------------------------------------------------------------------- |
 | 1   | [**What is Linux?**](#what-is-linux?)                                   |
 | 2   | [**Basic Linux Commands**](#basic-linux-commands)                       |
-| 3   | [**File permissions**](#file-permissions)                               |
-| 4   | [**Search Files**](#search-files)                                       |
-| 5   | [**Vi Vim commands**](#vi-vim-commands)                                 |
-| 6   | [**Linux for AWS DevOps**](#linux-for-aws-devops)                           |
-| 7   | [**Linux getting help**](#linux-getting-help)
+| 3   | [**Managing Users and Groups**](#managing-users-and-groups)                               |
+| 4   | [**File permissions**](#file-permissions)                               |
+| 5   | [**Search Files**](#search-files)                                       |
+| 6   | [**Vi Vim commands**](#vi-vim-commands)                                 |
+| 7   | [**Linux for AWS DevOps**](#linux-for-aws-devops)                           |
+| 8   | [**Linux getting help**](#linux-getting-help)
 
 
                            |
@@ -226,7 +227,46 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-3. ### File permissions
+
+3. ### Managing Users and Groups
+
+1. **sudo**: The `sudo` (superuser do) command gives some admin privileges to non-admin users 
+
+List available commands:
+
+    ```bash
+    sudo -l
+    ```
+
+Run command as root:
+
+    ```bash
+    sudo command
+    ```
+
+Run command as root:
+
+    ```bash
+    sudo -u root command
+    ```
+
+Run command as user:
+
+    ```bash
+    sudo -u user command
+    ```
+
+Switch to the superuser account:
+
+    ```bash
+    sudo su
+    ```
+
+
+
+
+
+4. ### File permissions
 
 
 **1.Ownership:**
@@ -237,7 +277,7 @@ Fedora
 
 **[⬆ Back to Top](#table-of-contents)**
 
-4. ### Search Files
+5. ### Search Files
 
 1. **Pattern search:**
 The `grep` command is used to search patterns in files.
@@ -275,7 +315,7 @@ find ./directory_name -empty
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Vi Vim commands
+6. ### Vi Vim commands
 
 Vi is a text editor originally created for the Unix operating system.
 Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers more
@@ -321,7 +361,7 @@ Exiting
 
 **[⬆ Back to Top](#table-of-contents)**
 
-6. ### Linux for AWS DevOps
+7. ### Linux for AWS DevOps
 
 **1.Linux Environment Variables**
 
@@ -399,7 +439,7 @@ To add a directory to path:
 ```
 
 
-7. ### Linux getting help
+8. ### Linux getting help
 
     1. The man pages
     2. The info pages
