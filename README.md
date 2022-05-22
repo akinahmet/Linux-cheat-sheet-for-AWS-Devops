@@ -299,6 +299,76 @@ Fedora
 
     The root user does not have a password set on some Linux systems like Ubuntu and Xubuntu. On these Linux systems, You can become root user via `sudo su` command.
 
+3. **User Management**:
+
+    On Linux, the local user database is `/etc/passwd`.
+    ```bash
+    /etc/passwd
+    ```
+
+    `root` user also called the superuser is capable of doing almost everything.
+    ```bash
+    root
+    ```
+
+    The `useradd` command is used for creating a new user. 
+    ```bash
+    useradd
+    ```
+
+    You can delete a user with `userdel` command. 
+    ```bash
+    userdel
+    ```
+
+    With the `usermod` command, you can modify a user's properties. 
+    ```bash
+    usermod
+    ```
+
+    User passwords can be set with the `passwd` command.
+    ```bash
+    passwd
+    ```
+
+3. **Group Management**:
+
+    `groupadd` command is used to create a new group.
+    ```bash
+    groupadd
+    ```
+
+    You can change group membership with the `useradd` or `usermod` command.
+    ```bash
+    useradd
+    ```
+    or
+    ```bash
+    usermod
+    ```
+
+    `groups` command is used to display a list of groups to which the user belongs.
+    ```bash
+    groups
+    ```
+
+    `groupmod` command can be used to change the group name.
+    ```bash
+    groupmod
+    ```
+
+    `groupdel` command is used to delete a group.
+    ```bash
+    groupdel
+    ```
+
+    With the `gpasswd` command, we can add a user to a group and to remove a user from a group. In the example below:
+    ```bash
+    gpasswd -a
+    ```
+    ```bash
+    gpasswd -d
+    ```
 
 
 **[⬆ Back to Top](#table-of-contents)**
