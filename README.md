@@ -232,54 +232,72 @@ Fedora
 
 1. **sudo**: The `sudo` (superuser do) command gives some admin privileges to non-admin users 
 
-List available commands:
+    List available commands:
 
     ```bash
     sudo -l
     ```
 
-Run command as root:
+    Run command as root:
 
     ```bash
     sudo command
     ```
 
-Run command as root:
+    Run command as root:
 
     ```bash
     sudo -u root command
     ```
 
-Run command as user:
+    Run command as user:
 
     ```bash
     sudo -u user command
     ```
 
-Switch to the superuser account:
+    Switch to the superuser account:
 
     ```bash
     sudo su
     ```
 2. **Basic User Commands**: 
 
-Your username is indicated by the `whoami` command.
+    Your username is indicated by the `whoami` command.
+    ```bash
+    whoami
+    ```
 
-The `who` command will provide you with details about who is logged on the system.
+    The `who` command will provide you with details about who is logged on the system.
+    ```bash
+    who
+    ```
 
-Command `who am i` the who command will only show the line that points to your current session.
+    Command `who am i` the who command will only show the line that points to your current session.
+    ```bash
+    who am i
+    ```
 
-The `w` command will inform you who is logged on and what they are doing.
+    The `w` command will inform you who is logged on and what they are doing.
+    ```bash
+    w
+    ```
 
-The `id` command will provide your user id, your primary group id, and a list of the groups you belong to.
+    The `id` command will provide your user id, your primary group id, and a list of the groups you belong to.
+    ```bash
+    id
+    ```
 
-The `su` command enables a shell to be run as another user.
+    The `su` command enables a shell to be run as another user.
+    ```bash
+    su
+    ```
 
-The `su` command retains the same shell environment by default. To become another user and also get the environment of the target user, issue the `su -` command followed by the target username.
+    The `su` command retains the same shell environment by default. To become another user and also get the environment of the target user, issue the `su -` command followed by the target username.
 
-If `su` or `su -` is not provided with a username, the command assumes that root is the target.
+    If `su` or `su -` is not provided with a username, the command assumes that root is the target.
 
-The root user does not have a password set on some Linux systems like Ubuntu and Xubuntu. On these Linux systems, You can become root user via `sudo su` command.
+    The root user does not have a password set on some Linux systems like Ubuntu and Xubuntu. On these Linux systems, You can become root user via `sudo su` command.
 
 
 
