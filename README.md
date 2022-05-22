@@ -405,3 +405,6 @@ To add a directory to path:
     2. The info pages
     3. The whatis command
     4. The help option
+
+
+**[⬆ Back to Top](#table-of-contents)**
