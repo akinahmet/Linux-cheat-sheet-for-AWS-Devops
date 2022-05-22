@@ -20,7 +20,7 @@
 
                            |
 
-1. ### What is Linux?
+### What is Linux?
 
 1. **Linux:** Linux is a family of open-source Unix-like operating systems based on the Linux kernel. We use the term “Linux” to refer to the Linux kernel.  
 
@@ -49,7 +49,7 @@ Fedora
 
    **[⬆ Back to Top](#table-of-contents)**
 
-2. ### Basic Linux Commands
+### Basic Linux Commands
 
 1. **pwd:** The pwd(Present Working Directory)  command outputs the name of the current working directory. 
 
@@ -228,7 +228,7 @@ Fedora
 **[⬆ Back to Top](#table-of-contents)**
 
 
-3. ### Managing Users and Groups
+### Managing Users and Groups
 
 1. **sudo**: The `sudo` (superuser do) command gives some admin privileges to non-admin users 
 
@@ -261,12 +261,31 @@ Switch to the superuser account:
     ```bash
     sudo su
     ```
+2. **Basic User Commands**: 
+
+Your username is indicated by the `whoami` command.
+
+The `who` command will provide you with details about who is logged on the system.
+
+Command `who am i` the who command will only show the line that points to your current session.
+
+The `w` command will inform you who is logged on and what they are doing.
+
+The `id` command will provide your user id, your primary group id, and a list of the groups you belong to.
+
+The `su` command enables a shell to be run as another user.
+
+The `su` command retains the same shell environment by default. To become another user and also get the environment of the target user, issue the `su -` command followed by the target username.
+
+If `su` or `su -` is not provided with a username, the command assumes that root is the target.
+
+The root user does not have a password set on some Linux systems like Ubuntu and Xubuntu. On these Linux systems, You can become root user via `sudo su` command.
 
 
 
+**[⬆ Back to Top](#table-of-contents)**
 
-
-4. ### File permissions
+### File permissions
 
 
 **1.Ownership:**
@@ -277,7 +296,7 @@ Switch to the superuser account:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-5. ### Search Files
+### Search Files
 
 1. **Pattern search:**
 The `grep` command is used to search patterns in files.
@@ -315,7 +334,7 @@ find ./directory_name -empty
 
 **[⬆ Back to Top](#table-of-contents)**
 
-6. ### Vi Vim commands
+### Vi Vim commands
 
 Vi is a text editor originally created for the Unix operating system.
 Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers more
@@ -361,7 +380,7 @@ Exiting
 
 **[⬆ Back to Top](#table-of-contents)**
 
-7. ### Linux for AWS DevOps
+### Linux for AWS DevOps
 
 **1.Linux Environment Variables**
 
@@ -439,7 +458,7 @@ To add a directory to path:
 ```
 
 
-8. ### Linux getting help
+### Linux getting help
 
     1. The man pages
     2. The info pages
