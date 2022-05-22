@@ -401,7 +401,7 @@ To add a directory to path:
 
 7. ### Linux getting help
 
-1. The man pages
-2. The info pages
-3. The whatis command
-4. The help option
+    1. The man pages
+    2. The info pages
+    3. The whatis command
+    4. The help option
