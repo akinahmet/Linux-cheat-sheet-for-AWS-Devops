@@ -241,19 +241,19 @@ Fedora
     Run command as root:
 
     ```bash
-    sudo command
+    sudo 
     ```
 
     Run command as root:
 
     ```bash
-    sudo -u root command
+    sudo -u root 
     ```
 
     Run command as user:
 
     ```bash
-    sudo -u user command
+    sudo -u user 
     ```
 
     Switch to the superuser account:
