@@ -14,7 +14,7 @@
 | 4   | [**File permissions**](#file-permissions)                               |
 | 5   | [**Search Files**](#search-files)                                       |
 | 6   | [**Vi Vim commands**](#vi-vim-commands)                                 |
-| 7   | [**Linux for AWS DevOps**](#linux-for-aws-devops)                           |
+| 7   | [**Linux Variables**](#linux-variables)                           |
 | 8   | [**Linux getting help**](#linux-getting-help)
 
 
@@ -468,7 +468,7 @@ Exiting
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Linux for AWS DevOps
+### Linux Variables
 
 **1.Linux Environment Variables**
 
