@@ -378,8 +378,37 @@ Fedora
 
 **1.Ownership:**
 
+`chown` – change ownership.
 
 **2.Permissions:**
+
+`chmod` – change permissions
+
+The breakdown of permissions:
+
+    u – user
+
+    g – group
+
+    o – other
+
+The permissions you can give to a file or folder:
+
+    r – read
+
+    w - write
+
+    x - execute
+
+    4 if read permission is desired.
+    
+    2 if write permission is desired.
+    
+    1 if execute permission is desired.
+
+    Thus 7 means read+write+execute, 6 means read+write, and 5 means read+execute.    
+
+Using the -R switch is important. If you want the permissions to apply from the parent object to  child objects (the sub-folders and files), you must use the -R (recursive).
 
 
 **[⬆ Back to Top](#table-of-contents)**
