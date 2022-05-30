@@ -719,9 +719,9 @@ To add a directory to path:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-**1.Using Control Operators:**
+**2.Using Control Operators:**
 
-**;**
+`;`
 ​
 - More than one command can be used in a single line with `;`.
 
@@ -730,7 +730,7 @@ To add a directory to path:
 ```bash
 cat days.txt ; cat count.txt 
 ```
-**&**
+`&`
 
 - When a line ends with an ampersand &, the shell will not wait for the command to finish. You will get your shell prompt back, and the command is executed in background. You will get a message when this command has finished executing in background.
 ​
@@ -743,7 +743,7 @@ cat count.txt
 cat days.txt
 ```
 
->**$?**
+`$?`
 ​
 - This control operator is used to check the status of last executed command. If status shows '0' then command was successfully executed and if shows '1' then command was a failure.
 
@@ -761,27 +761,27 @@ lss
 echo $?
 ```
 
->**&&**
+`&&`
 
 - The command shell interprets the && as the logical AND. When using this command, the second command will be executed only when the first one has been successfully executed.
 ​
 
->**||**
+`||`
 
 - The command shell interprets the (||) as the logical `OR`. This is opposite of logical `AND`. Means second command will execute only when first command will be a failure.
 ​
 
->**&& and ||**
+`&& and ||`
 
 - We can use this logical AND and logical OR to write an if-then-else structure on the command line. This example uses echo to display whether the rm command was successful.
 ​
 
->**#**
+`#`
 
 - Everything written after a pound sign (#) is ignored by the shell. This is useful to write a shell comment but has no influence on the command execution or shell expansion.​
 
 
->** \ **
+`\`
 
 - Lines ending in a backslash are continued on the next line. The shell does not interpret the newline character and will wait on shell expansion and execution of the command line until a newline without backslash is encountered.
 
