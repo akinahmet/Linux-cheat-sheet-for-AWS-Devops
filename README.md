@@ -590,4 +590,70 @@ To add a directory to path:
 
 **1.Using Filters:**
 
+​`cat`
+
+    - Concatenate files and print on the standard output​
+    - Create a folder and name it examples.​
+
+    ```bash
+    cat example.txt
+    ```
+
+​`tee`
+
+    - Read from standard input and write to standard output and files​
+    - Write the content of the example.txt file in reverse order to another file named temp.txt and display the content of temp.txt in reverse order.
+
+    ```bash
+    tac example.txt | tee temp.txt | tac
+    ```
+
+    - Check whether the temp.txt file created and display the content.​
+
+    ```bash
+    ls
+    cat temp.txt
+    ```
+
+​`grep`
+
+    - Print lines that match patterns. The most common use of grep is to filter lines of text containing (or not containing) a certain string.
+    - Create a text file named tennis.txt.​
+
+    ```bash
+    cat > tennis.txt
+​
+    Amelie Mauresmo, Fra
+    Justine Henin, BEL
+    Serena Williams, USA
+    Venus Williams, USA
+    ```
+
+`tr`
+
+    - The command 'tr' stands for 'translate’. It is used to translate, like from lowercase to uppercase and vice versa or new lines into spaces.
+    - Create a text file named example.txt.​
+
+    ```bash
+    cat << EOF > example.txt
+    Example:This is an example.
+    EOF
+    ```
+
+    - In the content of example.txt, replace or translate aer letters with 'QAZ'.​
+
+    ```bash
+    cat example.txt | tr aer QAZ
+    ```
+
+    - Write the content of example.txt on the same line.​
+
+    ```bash
+    cat example.txt | tr '\n' ' '
+    ```
+
+
+
+
+
 **1.Using Control Operators:**
