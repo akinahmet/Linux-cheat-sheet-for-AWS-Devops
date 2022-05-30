@@ -14,8 +14,9 @@
 | 4   | [**File permissions**](#file-permissions)                               |
 | 5   | [**Search Files**](#search-files)                                       |
 | 6   | [**Vi Vim commands**](#vi-vim-commands)                                 |
-| 7   | [**Linux Variables**](#linux-variables)                           |
-| 8   | [**Linux getting help**](#linux-getting-help)
+| 7   | [**Linux Variables**](#linux-variables)                                 |
+| 8   | [**Linux getting help**](#linux-getting-help)                           |
+| 9   | [**Filters and Control Operators**](#filters-and-control-operations)  
 
 
                            |
@@ -584,3 +585,9 @@ To add a directory to path:
 
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### Filters and Control Operators
+
+**1.Using Filters:**
+
+**1.Using Control Operators:**
