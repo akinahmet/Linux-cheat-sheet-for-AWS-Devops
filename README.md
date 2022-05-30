@@ -16,7 +16,7 @@
 | 6   | [**Vi Vim commands**](#vi-vim-commands)                                 |
 | 7   | [**Linux Variables**](#linux-variables)                                 |
 | 8   | [**Linux getting help**](#linux-getting-help)                           |
-| 9   | [**Filters and Control Operators**](#filters-and-control-operations)  
+| 9   | [**Filters and Control Operators**](#filters-and-control-operators)  
 
 
                            |
@@ -601,14 +601,14 @@ To add a directory to path:
 
 ​`tee`
 
-    - Read from standard input and write to standard output and files​
-    - Write the content of the example.txt file in reverse order to another file named temp.txt and display the content of temp.txt in reverse order.
+- Read from standard input and write to standard output and files​
+- Write the content of the example.txt file in reverse order to another file named temp.txt and display the content of temp.txt in reverse order.
 
     ```bash
     tac example.txt | tee temp.txt | tac
     ```
 
-    - Check whether the temp.txt file created and display the content.​
+- Check whether the temp.txt file created and display the content.​
 
     ```bash
     ls
@@ -617,22 +617,25 @@ To add a directory to path:
 
 ​`grep`
 
-    - Print lines that match patterns. The most common use of grep is to filter lines of text containing (or not containing) a certain string.
-    - Create a text file named tennis.txt.​
+- Print lines that match patterns. The most common use of grep is to filter lines of text containing (or not containing) a certain string.
+- Create a text file named tennis.txt.​
 
     ```bash
     cat > tennis.txt
 ​
     Amelie Mauresmo, Fra
+
     Justine Henin, BEL
+
     Serena Williams, USA
+
     Venus Williams, USA
     ```
 
 `tr`
 
-    - The command 'tr' stands for 'translate’. It is used to translate, like from lowercase to uppercase and vice versa or new lines into spaces.
-    - Create a text file named example.txt.​
+- The command 'tr' stands for 'translate’. It is used to translate, like from lowercase to uppercase and vice versa or new lines into spaces.
+- Create a text file named example.txt.​
 
     ```bash
     cat << EOF > example.txt
@@ -640,20 +643,79 @@ To add a directory to path:
     EOF
     ```
 
-    - In the content of example.txt, replace or translate aer letters with 'QAZ'.​
+- In the content of example.txt, replace or translate aer letters with 'QAZ'.​
 
     ```bash
     cat example.txt | tr aer QAZ
     ```
 
-    - Write the content of example.txt on the same line.​
+- Write the content of example.txt on the same line.​
 
     ```bash
     cat example.txt | tr '\n' ' '
     ```
 
+- Delete all the vowels in the content of example.txt.​
+
+    ```bash
+    cat example.txt | tr -d aeiou
+    ```
+
+- Write the whole content of example.txt in capital letters.​
+
+    ```bash
+    cat example.txt | tr [a-z] [A-Z]
+    ```
+
+​`wc`
+
+- Print line, word, and characters for each file.
 
 
+    ```bash
+    wc example.txt
+    ```
+
+- Find how many users are there in the computer.
+
+    ```bash
+    wc -l /etc/passwd
+    ```
+
+`sort`
+
+- The sort filter will default to an alphabetical sort. The sort filter will default to an alphabetical sort.
+
+    ```bash
+    sort example.txt
+    ```
+
+- Sort the content of example.txt in reverse order.​
+
+    ```bash
+    sort -r marks.txt
+    ```
+
+`uniq`
+
+- Report or omit repeated lines. With the help of uniq command you can form a sorted list in which every word will occur only once.
+
+
+- Display only the unique names in the content of example.txt.​before using uniq command, the file must be sorted
+
+    ```bash
+    sort example.txt | uniq
+    ```
+
+`comm`
+
+- Compare two sorted files line by line. By default, comm will always display three columns. First column indicates non-matching items of first file, second column indicates non-matching items of second file, and third column indicates matching items of both the files.
+
+- Both the files has to be in sorted order for 'comm' command to be executed.​
+
+    ```bash
+    comm file1.txt file2.txt
+    ```
 
 
 **1.Using Control Operators:**
