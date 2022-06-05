@@ -16,7 +16,8 @@
 | 6   | [**Vi Vim commands**](#vi-vim-commands)                                 |
 | 7   | [**Linux Variables**](#linux-variables)                                 |
 | 8   | [**Linux getting help**](#linux-getting-help)                           |
-| 9   | [**Filters and Control Operators**](#filters-and-control-operators)  
+| 9   | [**Filters and Control Operators**](#filters-and-control-operators)     |
+| 10   | [**Using Package Managers in Linux**](#using-package-managers-in-linux) 
 
 
                            |
@@ -786,4 +787,105 @@ echo $?
 - Lines ending in a backslash are continued on the next line. The shell does not interpret the newline character and will wait on shell expansion and execution of the command line until a newline without backslash is encountered.
 
 - Escaping characters are used to enable the use of control characters in the shell expansion but without interpreting it by the shell.
+
+### Using Package Managers in Linux
+
+**1.Amazon Linux Instance:**
+
+- Update Amazon Linux Instance.
+​
+```bash
+sudo yum update
+```
+
+- Check if 'git' is installed on Amazon Linux instance.
+​
+```bash
+git --version
+```
+
+- Install git on Amazon Linux instance.
+​
+```bash
+sudo yum install git
+```
+- Uninstall git on Amazon Linux instance.
+​
+```bash
+sudo yum remove git
+```
+
+- Install git on Amazon Linux instance without any interruption.
+​
+```bash
+sudo yum install git -y
+```
+
+- Uninstall git with dependencies on Amazon Linux instance without any interruption.
+​
+```bash
+sudo yum autoremove git -y
+```
+
+- List all available packages for Amazon Linux instance.
+​
+```bash
+sudo yum list
+```
+
+- List all available git packages for Amazon Linux instance.
+​
+```bash
+sudo yum list git
+```
+
+- List all installed packages on Amazon Linux instance.
+​
+```bash
+sudo yum list installed
+```
+- Check the available version of git with info command.
+​
+```bash
+sudo yum list git
+```
+
+**2.Ubuntu:**
+
+Update Ubuntu instance
+
+```bash
+sudo apt update
+```
+- Upgrade the packages. This command installs the listed available packages.
+
+```bash
+sudo apt upgrade
+```
+
+- Check if 'git' is installed on Ubuntu instance.
+​
+```bash
+git --version
+```
+
+- Check the info for the git package installed on Ubuntu instance.
+​
+```bash
+sudo apt info git
+```
+
+- List all available packages for Ubuntu instance.
+​
+```bash
+sudo apt list
+```
+
+- List all installed packages on Ubuntu instance.
+​
+```bash
+sudo apt list --installed
+```
+​
+
 ​
