@@ -17,7 +17,8 @@
 | 7   | [**Linux Variables**](#linux-variables)                                 |
 | 8   | [**Linux getting help**](#linux-getting-help)                           |
 | 9   | [**Filters and Control Operators**](#filters-and-control-operators)     |
-| 10   | [**Using Package Managers in Linux**](#using-package-managers-in-linux) 
+| 10   | [**Using Package Managers in Linux**](#using-package-managers-in-linux)|
+| 11   | [**Shell scripting basics**](#shell-scripting-basics) 
 
 
                            |
@@ -887,5 +888,49 @@ sudo apt list
 sudo apt list --installed
 ```
 ​
+### Shell scripting basics
 
+- Create a folder and name it shell-scripting.
+
+```bash
+mkdir shell-scripting && cd shell-scripting
+```
+
+- Create a `script` file named `basic.sh`. Note all the scripts would have the .sh extension.
+
+```bash
+#!/bin/bash
+echo "Hello World"
+```
+
+- Before we add anything else to our script, we need to alert the system that a shell script is being started.
+This is done specifying `#!/bin/bash` on the first line.
+
+- After to save the above content, we need to make the script executable.
+
+```bash
+chmod +x basic.sh
+```
+
+- Then we can execute the `basic.sh`. To execute basic.sh, it is required to add `./` beginning of the `basic.sh`. `./` means we're calling something in the current working directory. We have to specify the path for executables if they're outside our $PATH variable.
+
+```bash
+./basic.sh
+```
+
+- We can add the other shell commands to our script.
+
+```bash
+#!/bin/bash
+echo "hello"
+date
+pwd
+ls
+```
+
+- And execute again.
+
+```bash
+./basic.sh
+```
 ​
