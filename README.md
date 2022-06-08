@@ -789,6 +789,8 @@ echo $?
 
 - Escaping characters are used to enable the use of control characters in the shell expansion but without interpreting it by the shell.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ### Using Package Managers in Linux
 
 **1.Amazon Linux Instance:**
@@ -851,6 +853,8 @@ sudo yum list installed
 sudo yum list git
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+
 **2.Ubuntu:**
 
 Update Ubuntu instance
@@ -888,6 +892,8 @@ sudo apt list
 sudo apt list --installed
 ```
 ​
+**[⬆ Back to Top](#table-of-contents)**
+
 ### Shell scripting basics
 
 - Create a folder and name it shell-scripting.
@@ -934,3 +940,4 @@ ls
 ./basic.sh
 ```
 ​
+**[⬆ Back to Top](#table-of-contents)**
