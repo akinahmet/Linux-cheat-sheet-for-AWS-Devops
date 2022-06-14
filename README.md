@@ -18,7 +18,7 @@
 | 8   | [**Linux getting help**](#linux-getting-help)                           |
 | 9   | [**Filters and Control Operators**](#filters-and-control-operators)     |
 | 10   | [**Using Package Managers in Linux**](#using-package-managers-in-linux)|
-| 11   | [**Shell scripting basics**](#shell-scripting-basics) 
+| 11   | [**Shell scripting**](#shell-scripting) 
 
 
                            |
@@ -960,12 +960,35 @@ fi
 
 - Relational Operators
 
-Operator	Description
--eq	        equal
--ne	        not equal
--gt	        greater than
--lt	        less than
--ge	        greater than or equal
--le	        less than or equal
+| Operator | Description |
+| -------- | ----------- |
+| -eq   | equal                  |
+| -ne   | not equal              |
+| -gt   | greater than           |
+| -lt   | less than              |
+| -ge   | greater than or equal  |
+| -le   | less than or equal     |
 
 - String Operators
+
+- The string operators below are supported by Bourne Shell.
+
+| Operator | Description |
+| -------- | ----------- |
+| =    | equal            |
+| !=   | not equal        |
+| -z   | Empty string     |
+| -n   | Not empty string |
+
+- File Test Operators
+
+
+| Operator | Description |
+| -------- | ----------- |
+| -d file   | directory  |
+| -e file   | exists     |
+| -f file   | ordinary file     |
+| -r file   | readable          |
+| -s file   | size is > 0 bytes |
+| -w file   | writable          |
+| -x FILE   | executable        |
