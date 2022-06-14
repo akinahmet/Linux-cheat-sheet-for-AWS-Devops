@@ -944,7 +944,7 @@ ls
 ​
 **[⬆ Back to Top](#table-of-contents)**
 
-**Conditional Statements**
+**If Statement**
 
 - If statement 
 
@@ -971,8 +971,6 @@ fi
 
 - String Operators
 
-- The string operators below are supported by Bourne Shell.
-
 | Operator | Description |
 | -------- | ----------- |
 | =    | equal            |
@@ -992,3 +990,36 @@ fi
 | -s file   | size is > 0 bytes |
 | -w file   | writable          |
 | -x FILE   | executable        |
+
+**If Else Statements**
+
+
+```bash
+#!/bin/bash
+read -p "Input a number: " number
+
+if [[ $number -ge 10 ]]
+then
+  echo "The number is bigger than or equal to 10."
+else 
+  echo "The number is smaller than 10"
+fi
+```
+
+**If Elif Else Statements**
+
+
+```bash
+#!/bin/bash
+read -p "Input a number: " number
+
+if [[ $number -eq 10 ]]
+then
+  echo "The number is equal to 10."
+elif [[ $number -gt 10 ]]
+then
+  echo "The number is bigger than 10"
+else 
+  echo "The number is smaller than 10"
+fi
+```
