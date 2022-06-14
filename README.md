@@ -894,7 +894,9 @@ sudo apt list --installed
 ​
 **[⬆ Back to Top](#table-of-contents)**
 
-### Shell scripting basics
+### Shell scripting
+
+**Shell scripting basics**
 
 - Create a folder and name it shell-scripting.
 
@@ -941,3 +943,29 @@ ls
 ```
 ​
 **[⬆ Back to Top](#table-of-contents)**
+
+**Conditional Statements**
+
+- If statement 
+
+```bash
+#!/bin/bash
+read -p "Input a number: " number
+
+if [[ $number -gt 50 ]]
+then
+  echo "The number is big."
+fi
+```
+
+- Relational Operators
+
+Operator	Description
+-eq	        equal
+-ne	        not equal
+-gt	        greater than
+-lt	        less than
+-ge	        greater than or equal
+-le	        less than or equal
+
+- String Operators
