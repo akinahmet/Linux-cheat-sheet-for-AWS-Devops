@@ -946,7 +946,6 @@ ls
 
 **If Statement**
 
-- If statement 
 
 ```bash
 #!/bin/bash
@@ -1023,3 +1022,13 @@ else
   echo "The number is smaller than 10"
 fi
 ```
+
+**Boolean Operations**
+
+The Boolean operators below are supported by the Bourne Shell.
+
+| Operator | Description |
+| -------- | ----------- |
+| !        | negation    |
+| &&       | and         |
+| ||       | or          |
