@@ -1032,3 +1032,20 @@ The Boolean operators below are supported by the Bourne Shell.
 | !        | negation    |
 | &&       | and         |
 | ||       | or          |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+**While loops**
+
+```bash
+#!/bin/bash
+
+number=1
+
+while [[ $number -le 10  ]]
+do
+  echo $number
+  ((number++))
+done
+echo "Now, number is $number"
+```
