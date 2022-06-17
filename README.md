@@ -1093,3 +1093,44 @@ do
    echo $file
 done
 ```
+**[⬆ Back to Top](#table-of-contents)**
+
+**Using arrays with the for loop**
+
+```bash
+#!/bin/bash
+
+devops_tools=("docker" "kubernetes" "ansible" "terraform" "jenkins")
+
+for tool in ${devops_tools[@]}
+do
+   echo $tool
+done
+```
+
+**Continue and Break Statements**
+
+```bash
+#!/bin/bash
+
+number=1
+
+until [[ $number -lt 1  ]]
+do
+  ((number++))
+  
+  tens=$(($number % 10))
+  
+  if [[ $tens -eq 0 ]]
+  then
+    continue
+  fi
+
+  echo $number
+    
+  if [[ $number -gt 100 ]]
+  then
+    break
+  fi
+done
+```
