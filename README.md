@@ -21,7 +21,7 @@
 | 11   | [**Shell scripting**](#shell-scripting) 
 
 
-                           |
+
 
 ### What is Linux?
 
