@@ -1169,3 +1169,96 @@ do
   esac
 done
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+**Shell Scripting/Functions**
+
+```bash
+mkdir functions && cd functions
+```
+
+```bash
+#!/bin/bash
+
+Welcome () {
+    echo "Welcome to Linux Lessons"
+}
+
+Welcome
+```
+
+**Passing Arguments to Functions**
+
+```bash
+#!/bin/bash
+
+Welcome () {
+    echo "Welcome to Linux Lessons $1 $2 $3"
+}
+
+Welcome Joe Matt Timothy
+```
+
+**Returning Values from Functions**
+
+
+```bash
+pwd
+echo $?  #0
+pwt  # It is wrong command
+echo $?  #127
+```
+
+- When a bash function completes, its return value is the status of the last statement executed in the function. We can speciy return status by using the `return` keyword. We can think the `return` keyword as exit status of function. 
+
+- Add `return 3` line to `Welcome function`.
+
+```bash
+#!/bin/bash
+
+Welcome () {
+    echo "Welcome to Linux Lessons $1 $2 $3"
+    return 3
+    }
+
+Welcome Joe Matt Timothy
+echo $?
+```
+
+**Nested Functions**
+
+```bash
+#!/bin/bash
+
+function_one () {
+   echo "This is from the first function"
+   function_two
+}
+
+function_two () {
+   echo "This is from the second function"
+}
+
+function_one
+```
+**Variables Scope**
+
+```bash
+#!/bin/bash
+
+var1='global 1'
+var2='global 2'
+
+var_scope () {
+  local var1='function 1'
+  var2='function 2'
+  echo -e "Inside function:\nvar1: $var1\nvar2: $var2"
+}
+
+echo -e "Before calling function:\nvar1: $var1\nvar2: $var2"
+
+var_scope
+
+echo -e "After calling function:\nvar1: $var1\nvar2: $var2"
+```
