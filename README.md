@@ -1262,3 +1262,5 @@ var_scope
 
 echo -e "After calling function:\nvar1: $var1\nvar2: $var2"
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
